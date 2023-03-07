@@ -42,47 +42,47 @@ Date of finished: 07.03.2023
 
 Поднят интерфейс fa0/0 для vlan 1 и саб-интерфейс fa0/0.255 для vlan 255. Им заданы ip 192.168.0.1/24 и 192.168.255.1/24 соответсвенно.
 
-  int fa0/0
-  ip add 192.168.0.1 255.255.255.0
-  no shutdown
-  int fa0/0.255
-  enc dot1Q 255
-  ip add 192.168.255.1 255.255.255.0
+      int fa0/0
+      ip add 192.168.0.1 255.255.255.0
+      no shutdown
+      int fa0/0.255
+      enc dot1Q 255
+      ip add 192.168.255.1 255.255.255.0
 
 ![Alt text](screens/Screenshot_6.jpg)
 
 Для назначения ip-адресов для телефонов поднят DHCP пул с именем ip-telephony для сети 192.168.255.0/24 с шлюзом 192.168.255.1. Для ip-телефонии нужно указать адрес сервера, которым является сам маршрутизатор, поэтому указывается адрес 192.168.255.1. Option 150 - стандарт для передачи данных для устройств Cisco.
 
-  ip dhcp pool ip-yelephony
-  net 192.168.255.0 255.255.255.0
-  default 192.168.255.1
-  option 150 ip 192.168.255.1
+      ip dhcp pool ip-yelephony
+      net 192.168.255.0 255.255.255.0
+      default 192.168.255.1
+      option 150 ip 192.168.255.1
   
 ![Alt text](screens/Screenshot_7.jpg)
 
 Для настройки телефонии также нужно указать максимальное количество устройств и номеров. Для автоматического присвоения ip для телефонов 1 и 2 включен параметр auto assign 1 to 2. Также указывается адрес обработчика звонков, которым является сам ройтер.
 
-  telepony-service
-  max-dn 2
-  max-ephones 2 
-  auto assign 1 to 2
-  ip source 192.168.255.1 port 3100
+      telepony-service
+      max-dn 2
+      max-ephones 2 
+      auto assign 1 to 2
+      ip source 192.168.255.1 port 3100
   
 ![Alt text](screens/Screenshot_8.jpg)
 
 На свиче настроены интерфесы ведущие к телефонам: указываются режим access и vlan для передачи голоса.
 
-  int range fa0/1-2
-  switchport mode access
-  switchport voice vlan 255
+      int range fa0/1-2
+      switchport mode access
+      switchport voice vlan 255
   
 ![Alt text](screens/Screenshot_9.jpg)
 
 На свиче в сторону на интерфейсе, ведущему к роутеру, ставится режим trunk с vlan 1 и 255.
 
-  int gi0/1
-  switchport mode trunk
-  switchport trunk allowed vlan add 255
+      int gi0/1
+      switchport mode trunk
+      switchport trunk allowed vlan add 255
 
 ![Alt text](screens/Screenshot_10.jpg)
 
