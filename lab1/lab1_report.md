@@ -18,26 +18,26 @@ Date of finished: 07.03.2023
 
 Собрана схема соединения из четырех свичей и семи хостов.
 
-![Alt text](4/Screenshot_1.jpg)
+![Alt text](screens/Screenshot_1.jpg)
 
 Хостам назначены ip-адреса, начиная с 192.168.0.1 до 192.168.0.7 с масками 255.255.255.0.
 
-![Alt text](4/Screenshot_2.jpg)
+![Alt text](screens/Screenshot_2.jpg)
 
 После назначения ip-адресов хосты смогли пинговать друг друга.
 
-![Alt text](4/Screenshot_3.jpg)
+![Alt text](screens/Screenshot_3.jpg)
 
 Часть 2
 
-![Alt text](4/Screenshot_4.jpg)
-![Alt text](4/Screenshot_5.jpg)
-![Alt text](4/Screenshot_6.jpg)
-![Alt text](4/Screenshot_7.jpg)
-![Alt text](4/Screenshot_8.jpg)
-![Alt text](4/Screenshot_9.jpg)
-![Alt text](4/Screenshot_10.jpg)
-![Alt text](4/Screenshot_11.jpg)
-![Alt text](4/Screenshot_12.jpg)
-![Alt text](4/Screenshot_13.jpg)
-![Alt text](4/Screenshot_14.jpg)
+![Alt text](screens/Screenshot_4.jpg)
+![Alt text](screens/Screenshot_5.jpg)
+![Alt text](screens/Screenshot_6.jpg)
+![Alt text](screens/Screenshot_7.jpg)
+![Alt text](screens/Screenshot_8.jpg)
+![Alt text](screens/Screenshot_9.jpg)
+![Alt text](screens/Screenshot_10.jpg)
+![Alt text](screens/Screenshot_11.jpg)
+![Alt text](screens/Screenshot_12.jpg)
+![Alt text](screens/Screenshot_13.jpg)
+![Alt text](screens/Screenshot_14.jpg)
