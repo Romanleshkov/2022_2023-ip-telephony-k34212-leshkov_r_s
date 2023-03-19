@@ -7,3 +7,17 @@ Author: Leshkov Roman Sergeevich
 Lab: Lab2
 Date of create: 17.03.2023
 Date of finished: 17.03.2023
+
+Цель работы: 
+
+Изучить построение сети IP-телефонии с помощью маршрутизатора Cisco 2811, коммутатора Cisco catalyst 3560 и IP телефонов Cisco 7960.
+
+Ход работы:
+
+Часть 1
+
+![Alt text](screens/Screenshot_1.jpg)
+
+Часть 2
+
+Вывод:
